@@ -7,7 +7,11 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>../weasel-core</module>
+		<module>../weasel-lang</module>
+		<module>../weasel-http</module>
+		<module>../weasel-converter</module>
+		<module>../weasel-express</module>
+		<module>../weasel-file</module>
 		<module>../weasel-excel</module>
 		<module>../weasel-lucene</module>
 		<module>../weasel-memcached</module>
@@ -15,7 +19,7 @@
 		<module>../weasel-spring-mybatis</module>
 		<module>../weasel-spring-mongodb</module>
 		<module>../weasel-spring-elasticsearch</module>
-		<module>../weasel-spring-security</module>
+		<module>../weasel-spring-shiro</module>
 	</modules>
 
 	<properties>
