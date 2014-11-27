@@ -1,13 +1,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.weasel.parent</groupId>
-	<artifactId>weasel-parent</artifactId>
+	<groupId>com.weasel.root</groupId>
+	<artifactId>weasel-root</artifactId>
 	<version>1.0.0-RELEASE</version>
 	<packaging>pom</packaging>
 
-	<modules>
-		<module>../weasel-lang</module>
+	<!-- <modules>
+		<module>../weasel-core</module>
 		<module>../weasel-http</module>
 		<module>../weasel-converter</module>
 		<module>../weasel-express</module>
@@ -20,7 +20,7 @@
 		<module>../weasel-spring-mongodb</module>
 		<module>../weasel-spring-elasticsearch</module>
 		<module>../weasel-spring-shiro</module>
-	</modules>
+	</modules> -->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,11 +33,11 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>3.1</version>
-			</dependency>
+			</dependency> -->
 			<dependency>
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils</artifactId>
