@@ -6,21 +6,12 @@
 	<version>1.0.0-RELEASE</version>
 	<packaging>pom</packaging>
 
-	<!-- <modules>
-		<module>../weasel-core</module>
-		<module>../weasel-http</module>
-		<module>../weasel-converter</module>
-		<module>../weasel-express</module>
-		<module>../weasel-file</module>
-		<module>../weasel-excel</module>
-		<module>../weasel-lucene</module>
-		<module>../weasel-memcached</module>
-		<module>../weasel-mybatis</module>
-		<module>../weasel-spring-mybatis</module>
-		<module>../weasel-spring-mongodb</module>
-		<module>../weasel-spring-elasticsearch</module>
-		<module>../weasel-spring-shiro</module>
-	</modules> -->
+	<!-- <modules> <module>../weasel-core</module> <module>../weasel-http</module> 
+		<module>../weasel-converter</module> <module>../weasel-express</module> <module>../weasel-file</module> 
+		<module>../weasel-excel</module> <module>../weasel-lucene</module> <module>../weasel-memcached</module> 
+		<module>../weasel-mybatis</module> <module>../weasel-spring-mybatis</module> 
+		<module>../weasel-spring-mongodb</module> <module>../weasel-spring-elasticsearch</module> 
+		<module>../weasel-spring-shiro</module> </modules> -->
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,11 +24,13 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- <dependency>
-				<groupId>org.apache.commons</groupId>
-				<artifactId>commons-lang3</artifactId>
-				<version>3.1</version>
-			</dependency> -->
+			<!-- <dependency> <groupId>org.apache.commons</groupId> <artifactId>commons-lang3</artifactId> 
+				<version>3.1</version> </dependency> -->
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.4</version>
+			</dependency>
 			<dependency>
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils</artifactId>
@@ -191,6 +184,17 @@
 				<version>3.1</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>4.5</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpmime</artifactId>
+				<version>4.5</version>
+			</dependency>
+
+			<dependency>
 				<groupId>commons-pool</groupId>
 				<artifactId>commons-pool</artifactId>
 				<version>1.6</version>
@@ -246,6 +250,11 @@
 				<groupId>org.apache.shiro</groupId>
 				<artifactId>shiro-web</artifactId>
 				<version>${org.shiro-version}</version>
+			</dependency>
+			<dependency>
+				<groupId>c3p0</groupId>
+				<artifactId>c3p0</artifactId>
+				<version>0.9.1.2</version>
 			</dependency>
 		</dependencies>
 
